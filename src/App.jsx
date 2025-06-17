@@ -10,6 +10,8 @@ import IntroSection from './components/IntroSection';
 import BlurFade from './components/Animations/BlurFade';
 import BlurFadeText from './components/Animations/BlurFadeText';
 import './index.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const mode = localStorage.getItem('mode') === 'true';
@@ -34,6 +36,27 @@ function App() {
         </div>
       </div>
       <BottomNav darkMode={darkMode} setDarkMode={setDarkMode} />
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme={darkMode ? "dark" : "light"}
+        toastClassName={() =>
+          darkMode
+            ? "bg-blue-900 flex flex-row text-white px-4 py-3 rounded-md shadow-lg border border-blue-500"
+            : "bg-emerald-100  flex flex-row text-black px-4 py-3 rounded-md shadow-lg border border-emerald-400"
+        }
+        bodyClassName="text-sm font-medium"
+        progressClassName={() =>
+          darkMode ? "bg-blue-300" : "bg-emerald-500"
+        }
+      />
     </div>
   </>
   );

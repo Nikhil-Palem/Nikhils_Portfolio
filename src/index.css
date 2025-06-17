@@ -36,7 +36,14 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.Toastify__toast {
+  font-family: 'Inter', sans-serif;
+  z-index: 9999; /* ensure it's on top */
+}
 
+.Toastify__toast-container {
+  z-index: 9999;
+}
 @keyframes pulse-dot {
 
   0%,
