@@ -3,7 +3,7 @@ import SectionTitle from './Animations/SectionTitle';
 import { FaGithub, FaGlobe, FaDownload } from "react-icons/fa";
 // import tripimg from '../assets/trip1.png';
 import CampusConnectimg from '../assets/cc1.png';
-import tripimg from '../assets/trip1.png'
+import tripimg from '../assets/trip1.PNG'
 const projects = [
   {
     id: 1,
