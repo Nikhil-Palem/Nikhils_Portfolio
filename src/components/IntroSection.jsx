@@ -18,7 +18,7 @@ function IntroSection() {
         </div>
 
         {/* Hire Me Button */}
-        <div className="sm:mr-10">
+        <div className="">
           <button
             onClick={() =>
               document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
